@@ -18,7 +18,8 @@ export class EntrarComponent implements OnInit {
     private router: Router
   ) { }
 
-  ngOnInit(): void {
+  ngOnInit():void {
+    
   }
   
   entrar(){
