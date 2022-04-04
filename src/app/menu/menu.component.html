@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+<nav class="navbar navbar-expand-lg navbar-light bg-1 font-orbiter">
     <div class="container-fluid">
       
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,19 +9,19 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center">
           <li class="nav-item">
               <!--User Image-->
-            <img src="{{foto}}" alt="User image" width="50px" height="50px" class="img-fluid border rounded-circle">
+            <img src="{{foto}}" alt="User image" width="50px" height="50px" class="img-fluid  border-b1 rounded-circle">
           </li>
           <li class="nav-item pl-3">
-            <p class="m-0 font-weight-bold text-white fs-16">{{nome}}</p>
+            <p class="m-0 font-weight-bold txt-color-pink  fs-16">{{nome}}</p>
           </li>
           <li class="nav-item pl-3" >
             <a href="">
-           <p class="m-0 text-white fs-16"> <i class="fa fa-pencil-square-o " aria-hidden="true"></i></p></a>
+           <p class="m-0  fs-16"> <i class="fa fa-pencil-square-o txt-color-pink " aria-hidden="true"></i></p></a>
           </li>
         </ul>
         <ul class="navbar-nav ml-auto mb-2 mb-lg-0 d-flex align-items-center">
           <li class="nav-item pr-3">
-            <a (click)='sair()' class="m-0 text-white fs-16">Sair <i class="fa fa-sign-out" aria-hidden="true"></i></a>
+            <a (click)='sair()' class="m-0 txt-color-lightblue fs-16">Sair <i class="fa txt-color-lightblue fa-sign-out" aria-hidden="true"></i></a>
           </li>
         </ul>
       </div>
