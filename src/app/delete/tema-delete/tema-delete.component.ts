@@ -13,6 +13,7 @@ export class TemaDeleteComponent implements OnInit {
 
   tema: Tema = new Tema();
   idTema: number
+  
   constructor(
     private temaService: TemaService,
     private router: Router,
