@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Postagem } from 'src/app/model/Postagem';
+import { Usuario } from 'src/app/model/Usuario';
 import { PostagemService } from 'src/app/service/postagem.service';
 import { environment } from 'src/environments/environment.prod';
 
@@ -10,7 +11,7 @@ import { environment } from 'src/environments/environment.prod';
   styleUrls: ['./postagem-delete.component.css']
 })
 export class PostagemDeleteComponent implements OnInit {
-
+  usuario: Usuario = new Usuario()
   postagem: Postagem = new Postagem()
   idPost: number
   
@@ -41,7 +42,7 @@ export class PostagemDeleteComponent implements OnInit {
   
 
   apagar(){
-    this.postagemService.deletePostagem(this.idPost).subscribe(( ) =>{
+    this.postagemService.deletePostagem(this.postagem.id).subscribe(() =>{
       alert('Postagem apagada com sucesso!')
       this.router.navigate(['/inicio'])
     })

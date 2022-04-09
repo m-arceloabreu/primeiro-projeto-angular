@@ -29,6 +29,6 @@ export class PostagemService {
     return this.http.put<Postagem>('https://m-arceloabreu.herokuapp.com/postagens',postagem, this.token)
   }
   deletePostagem(id: number){
-    this.http.delete(`https://m-arceloabreu.herokuapp.com/postagens/${id}`,this.token)
+    return this.http.delete(`https://m-arceloabreu.herokuapp.com/postagens/${id}`,this.token)
   }
 }
